@@ -1,0 +1,202 @@
+
+package op;
+
+import java.util.*;
+
+public class Op {
+    public static void main(String[] args) {
+        
+        
+        String answer;
+        boolean takeagain = true;
+        
+        while (takeagain) {
+            
+            int result =0;
+        
+        
+        Scanner scanner; 
+        scanner = new Scanner(System.in);  
+        
+        System.out.println("**********************************");
+        System.out.println("            CHEESEQUIZ              ");
+        System.out.println("**********************************");
+        
+        
+        //1Q
+        System.out.println("---------------------------");
+        System.out.println("******First Question******");
+        System.out.println("---------------------------");
+        System.out.println("What type of assignment operator that assign the value of the right operand to the left operand?");
+        
+        System.out.println("\nChoices:");
+        System.out.println("A. Assingment");
+        System.out.println("B. Add");
+        System.out.println("C. Subtract");
+        System.out.println("D. Multiple");
+        System.out.println("E. Divide");
+             
+        System.out.print("Enter your answer: ");
+        answer = scanner.nextLine();
+        
+        
+        if (answer.contains ("a") || answer.contains ("A")){
+            System.out.println("Your answer is correct");
+            result +=1;
+        }
+            
+        else{    
+            
+            System.out.println("\n!!!!!!OOOOPPPSSS!!!!!!!");
+            System.out.println("Incorrect Answer");
+            System.out.println("---------------------------");
+            System.out.println("The correct asnwer is: A ");
+            System.out.println("---------------------------");
+        }
+        
+        
+        //2Q
+        System.out.println("---------------------------");
+        System.out.println("******Second Question******");
+        System.out.println("---------------------------");
+        System.out.println("What type of assigment operator that adds the operands and assigns the result to the left operand?");
+        
+        System.out.println("\nChoices:");
+        System.out.println("A. Assingment");
+        System.out.println("B. Add");
+        System.out.println("C. Subtract");
+        System.out.println("D. Multiple");
+        System.out.println("E. Divide");
+             
+        System.out.print("Enter your answer: ");
+        answer = scanner.nextLine();
+        
+        
+        if (answer.contains ("b") || answer.contains ("B")){
+            System.out.println("Your answer is correct");
+            result +=1;
+        }
+            
+        else{    
+            
+            System.out.println("\n!!!!!!OOOOPPPSSS!!!!!!!");
+            System.out.println("Incorrect Answer");
+            System.out.println("---------------------------");
+            System.out.println("The correct asnwer is: B ");
+            System.out.println("---------------------------");
+        
+        }
+        
+        //3Q
+        System.out.println("---------------------------");
+        System.out.println("******Third Question******");
+        System.out.println("---------------------------");
+        System.out.println("What type of assignment operator that subject the right operand from the left operand and store the result in the left operand?");
+        
+        System.out.println("\nChoices:");
+        System.out.println("A. Assingment");
+        System.out.println("B. Add");
+        System.out.println("C. Subtract");
+        System.out.println("D. Multiple");
+        System.out.println("E. Divide");
+             
+        System.out.print("Enter your answer: ");
+        answer = scanner.nextLine();
+        
+        
+        if (answer.contains ("c") || answer.contains ("C")){
+            System.out.println("Your answer is correct");
+            result +=1;
+        }
+            
+        else{    
+            
+            System.out.println("\n!!!!!!OOOOPPPSSS!!!!!!!");
+            System.out.println("Incorrect Answer");
+            System.out.println("---------------------------");
+            System.out.println("The correct asnwer is: C ");
+            System.out.println("---------------------------");
+        
+        }
+        //4Q
+        System.out.println("---------------------------");
+        System.out.println("******Fourth Question******");
+        System.out.println("---------------------------");
+        System.out.println("What type of assignment operator that multiplies the operand by the right oprand and stores the result in the left operand?");
+        
+        System.out.println("\nChoices:");
+        System.out.println("A. Assingment");
+        System.out.println("B. Add");
+        System.out.println("C. Subtract");
+        System.out.println("D. Multiple");
+        System.out.println("E. Divide");
+             
+        System.out.print("Enter your answer: ");
+        answer = scanner.nextLine();
+        
+        
+        if (answer.contains ("d") || answer.contains ("D")){
+            System.out.println("Your answer is correct");
+            result +=1;
+        }
+            
+        else{    
+            
+            System.out.println("\n!!!!!!OOOOPPPSSS!!!!!!!");
+            System.out.println("Incorrect Answer");
+            System.out.println("---------------------------");
+            System.out.println("The correct asnwer is: D ");
+            System.out.println("---------------------------");
+        
+        }
+        //5Q
+        System.out.println("---------------------------");
+        System.out.println("******Last Question******");
+        System.out.println("---------------------------");
+        System.out.println("What type of assignment operator that divides the left operand by the right operand and stores the result in the left operand?");
+        
+        System.out.println("\nChoices:");
+        System.out.println("A. Assingment");
+        System.out.println("B. Add");
+        System.out.println("C. Subtract");
+        System.out.println("D. Multiple");
+        System.out.println("E. Divide");
+             
+        System.out.print("Enter your answer: ");
+        answer = scanner.nextLine();
+        
+        
+        if (answer.contains ("e") || answer.contains ("E")){
+            System.out.println("Your answer is correct");
+            result +=1;
+        }
+            
+        else{    
+            
+            System.out.println("\n!!!!!!OOOOPPPSSS!!!!!!!");
+            System.out.println("Incorrect Answer");
+            System.out.println("---------------------------");
+            System.out.println("The correct asnwer is: E ");
+            System.out.println("---------------------------");
+        
+        }
+        
+        System.out.println("--------------------------------------------------");
+        System.out.println("Congrats, Your final score is: " + result + "/5 \n");
+        System.out.println("--------------------------------------------------");
+        System.out.println("\nDo you want to take the quiz again?\n");
+        System.out.print("(Y)yes or (N)no: ");
+        String again = scanner.nextLine();
+        
+        if (again.equals("Y") || again.equals("y")){
+            takeagain = true;
+        }
+        
+        else{
+            takeagain = false;
+            System.out.println("Thanks for taking the quiz!");
+        }
+        
+    }
+    
+}
